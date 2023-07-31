@@ -40,27 +40,28 @@ module.exports = {
   // Update a user
   updateUser(req, res) {
     User.findOneAndUpdate(
-      { _id: req.params.userId },
-      { username: req.body.username },
-      { email: req.body.email },
-      { runValidators: true, new: true }
+        { _id: req.params.userId }, 
+        {
+          username: req.body.username,
+          email: req.body.email
+        }, 
+        { new: true }, 
+        (err, result) => {
+          if (result) {
+            res.status(200).json(result);
+            console.log(`Updated: ${result}`);
+          } else {
+            console.log(err);
+            res.status(500).json({ message: 'error', err });
+          }
+        }
     )
-      .then((user) =>
-        !user
-          ? res.status(404).json({
-              message: 'No user user found with this id',
-            })
-          : res.json({ message: 'User successfully deleted' })
-      )
-      .catch((err) => {
-        console.log(err);
-        res.status(500).json(err);
-      });
-  },
+},
+
 
   // Delete a user and remove them from the thought
   deleteUser(req, res) {
-    User.findOneAndRemove({ _id: req.params.userId })
+    User.findOneAndDelete({ _id: req.params.userId })
       .then((user) =>
         !user
           ? res.status(404).json({ message: 'No such user exists' })
@@ -85,8 +86,7 @@ module.exports = {
 
   // Add a friend to a user
   addFriend(req, res) {
-    User.findOne(
-      { _id: req.params.friendId })
+    User.findOne({ _id: req.params.friendId })
       .select('-__v')
       .then((user) => {
         return User.findOneAndUpdate (
@@ -105,7 +105,7 @@ module.exports = {
       .catch((err) => res.status(500).json(err));
   },
   // Remove friend from a user
-  removeFriend(req, res) {
+  deleteFriend(req, res) {
     User.findOne(
       { _id: req.params.friendId })
       .select('-__v')
