@@ -38,12 +38,12 @@ npm start
 
 #### Walkthrough Video
 
-[Click me to see the demo video!]![NoSQL-Socialmedia-demo](https://github.com/ShivaTagh/Social-Network-API/assets/127795324/46e74aec-9ac6-4112-9574-b1d713e8dcc6)
+![NoSQL-Socialmedia-demo](https://github.com/ShivaTagh/Social-Network-API/assets/127795324/46e74aec-9ac6-4112-9574-b1d713e8dcc6)
 
 
 #### Insomnia Screenshot
 
-![Screenshot]
+
 ![image](https://github.com/ShivaTagh/Social-Network-API/assets/127795324/dca62e31-949e-4064-a08e-aceb3a436adb)
 ![image](https://github.com/ShivaTagh/Social-Network-API/assets/127795324/e3201bee-070a-46d7-99a1-f537e55da7f4)
 
