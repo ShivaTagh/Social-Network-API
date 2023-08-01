@@ -5,7 +5,6 @@
 - [Technology](#Technology)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Walkthrough Video](#WalkthroughVideo)
 - [Contribution](#contribution)
 - [Questions](#questions)
 
