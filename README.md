@@ -5,7 +5,7 @@
 - [Technology](#Technology)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Walkthrough video](#Walkthrough video)
+- [Walkthrough Video](#Walkthrough Video)
 - [Contribution](#contribution)
 - [Questions](#questions)
 
@@ -37,7 +37,7 @@ After installing npm packages, the application will be invoked by using the foll
 npm start
 ```
 
-#### Walkthrough Video
+### Walkthrough Video
 
 ![NoSQL-Socialmedia-demo](https://github.com/ShivaTagh/Social-Network-API/assets/127795324/46e74aec-9ac6-4112-9574-b1d713e8dcc6)
 
