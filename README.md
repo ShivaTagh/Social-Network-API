@@ -39,7 +39,11 @@ npm start
 ### Walkthrough Video
 
 
-https://github.com/ShivaTagh/Social-Network-API/assets/127795324/7db0a1e8-522f-47f6-b714-5e663cce131b
+
+
+https://github.com/ShivaTagh/Social-Network-API/assets/127795324/ecd266e2-2ab9-4d61-a544-0c9c4f28b994
+
+
 
 
 #### Insomnia Screenshot
